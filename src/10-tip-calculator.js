@@ -30,6 +30,7 @@
  * @returns {{ tipPercentage: number, tipAmount: number, totalAmount: number } | null}
  */
 export function calculateTip(billAmount, serviceRating) {
+  // Calculate tip based on service rating
   if (billAmount <= 0) {
     return null;
   }

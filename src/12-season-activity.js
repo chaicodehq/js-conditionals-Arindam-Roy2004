@@ -31,6 +31,7 @@
  * @returns {{ season: string, activity: string } | null}
  */
 export function getSeasonActivity(month, temperature) {
+  // Determine season and suggest activity based on temperature
   if (!Number.isInteger(month) || month < 1 || month > 12) {
     return null;
   }

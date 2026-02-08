@@ -29,8 +29,7 @@
  * @returns {number} Shipping cost, 0 for free shipping, or -1 for invalid input
  */
 export function calculateShipping(weight, country, orderTotal) {
-  // Your code here
-  if(weight<=0 || orderTotal < 0) return -1;
+  if (weight <= 0 || orderTotal < 0) return -1;
 
   const isDomestic = country.toUpperCase() === "US";
   // const cost = 0;

@@ -33,6 +33,7 @@
  * @returns {number} Parking fee or -1 for invalid input
  */
 export function calculateParkingFee(hours, vehicleType) {
+  // Calculate parking fee with daily maximum cap
   if (hours <= 0) {
     return -1;
   }

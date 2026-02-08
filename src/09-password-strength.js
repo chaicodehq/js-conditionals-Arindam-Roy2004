@@ -26,6 +26,7 @@
  * @returns {string} "weak", "medium", "strong", or "very strong"
  */
 export function checkPasswordStrength(password) {
+  // Evaluate password strength based on 5 criteria
   if (typeof password !== "string" || password.length === 0) {
     return "weak";
   }

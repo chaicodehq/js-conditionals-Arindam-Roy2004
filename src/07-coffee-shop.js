@@ -31,6 +31,7 @@
  * @returns {number} Total price or -1 for invalid input
  */
 export function calculateCoffeePrice(size, type, extras = {}) {
+  // Calculate total coffee price based on size, type, and extras
   const sizePrices = {
     small: 3.0,
     medium: 4.0,

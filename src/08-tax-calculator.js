@@ -26,6 +26,7 @@
  * @returns {number} Total tax amount owed
  */
 export function calculateTax(income) {
+  // Calculate progressive tax based on income brackets
   if (income <= 0) {
     return 0;
   }
